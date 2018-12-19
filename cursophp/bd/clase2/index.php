@@ -8,7 +8,8 @@
 	<a href="Estudiantes_vista.php">Estudiantes</a>
 	<a href="#">Profesores</a>
 	<a href="#">Cursos</a>
-	<?php
+
+<?php
 ?>
 </body>
 </html>
