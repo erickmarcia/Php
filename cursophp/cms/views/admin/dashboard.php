@@ -1,72 +1,116 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link href="assets/css/open-iconic-bootstrap.css" rel="stylesheet">
-    <title>Dashboard</title>
+<div class="container-fluid dashboard">
+  <div class="row">
+      <?php require_once 'navbar.php'; ?>
 
-    <!-- Custom styles for this template -->
-    <link href="assets/css/dashboard.css" rel="stylesheet">
-  </head>
-    <body>
-    <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Mi Blog</a>
-      <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar" aria-label="Search">
-      <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
-          <a class="nav-link" href="#">Salir</a>
-        </li>
-      </ul>
-    </nav>
-
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Dashboard
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Publicaciones
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Usuarios
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Comentarios
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Personalizar
-                </a>
-              </li>
-            </ul>
+      <div id="main" class="p-0 container-fluid main">
+        <header class="pr-3 pl-3 pr-md-3 pl-md-3 pr-lg-5 pl-lg-5 d-flex justify-content-end align-items-center header">
+          <div class="w-100 text-sm-left text-md-center">
+            <h1 class="m-0 d-lg-none side__nav--title"><?php echo NOMBRE_BLOG; ?></h1>
           </div>
-        </nav>
+          <div class="btn-group container__user">
+            <button type="button" class="p-0 d-flex align-items-center position-relative container__user--btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <p class="m-0 mr-4 username">Usuario</p>
+              <span class="arrow--left" ></span>
+                <i class="fas fa-angle-down username--arrow" id="dropdownMenuButton"></i>
+              </span>
+            </button>
+            <!--<div class="dropdown-menu dropdown-menu-right">
+              <a href="#" class="dropdown-item">User</a>
+              <a href="#" class="dropdown-item">User</a>
+            </div>-->
+          </div>
+
+
+          </header>
+          <div class="p-4 p-lg-5  main__container">
+              <div class="row m-0 mb-5">
+                  <h2>Dashboard</h2>
+              </div>
+              <div class="row m-0">
+                  <div class="mr-5 col-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 card__stats">
+                      <p class="card__stats--name">Usuarios</p>
+                      <span class="card__stats--amount">100</span>
+                  </div>
+
+                  <div class="mr-5 col-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 card__stats">
+                      <p class="card__stats--name">Usuarios</p>
+                      <span class="card__stats--amount">100</span>
+                  </div>
+
+                  <div class="mr-5 col-12 col-sm-3 col-md-3 col-lg-2 col-xl-2 card__stats">
+                      <p class="card__stats--name">Usuarios</p>
+                      <span class="card__stats--amount">100</span>
+                  </div>
+
+              </div>
+              <div class="row">
+                  <div class="pt-4 col-12 col-xl-6 last__publications">
+                      <h3 class="table--title">Últimos registros</h3>
+                      <table class="table">
+                          <thead class="t-head">
+                              <tr>
+                              <th scope="col">Título</th>
+                              <th scope="col">Comentarios</th>
+                              <th scope="col">Acciones</th>
+
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              <td>@mdo</td>
+
+                              </tr>
+
+                              <tr>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                              <td>@fat</td>
+
+                              </tr>
+
+                              <tr>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                              <td>@twitter</td>
+
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+
+                  <div class="pt-4 col-12 col-xl-6 last__registers">
+                      <h3 class="table--title">Últimos registros</h3>
+                      <table class="table">
+                          <thead class="t-head">
+                              <tr>
+                              <th scope="col">Título</th>
+                              <th scope="col">Comentarios</th>
+
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                              </tr>
+
+                              <tr>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                              </tr>
+
+                              <tr>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+
       </div>
     </div>
-  </body>
+  </div>
+</div>
