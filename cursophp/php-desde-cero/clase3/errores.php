@@ -10,7 +10,7 @@
 
 
 	#Guardar errores en un log
-	echo $nombr
+	echo $nombre;
 	ini_set("log_errors", 1);
 	ini_set("error_log", "/tmp/php-error.log");
 	error_log("Hay un error");
