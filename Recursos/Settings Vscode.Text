@@ -1,0 +1,74 @@
+{
+  "[html]": {},
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "workbench.iconTheme": "material-icon-theme",
+  // "team.showWelcomeMessage": false,
+  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "breadcrumbs.enabled": true,
+  // "terminal.integrated.shell.windows": "C:\\Users\\emarcia\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+  "xmlTools.enableXmlTreeViewCursorSync": true,
+  "view-in-browser.customBrowser": "chrome",
+  // "openInBrowser.defaultBrowser": "Chrome",
+  "git.ignoreMissingGitWarning": true,
+  
+  // CONFIGURACIÖN PARA PHP
+  //
+  // PHP
+  "phpserver.relativePath": ".",
+  "phpserver.ip": "localhost",
+  "phpserver.phpPath": "C:/laragon/bin/php/php-7.2.11-Win32-VC15-x64/php.exe",
+  //"phpserver.phpPath": "C:/Bitnami/wappstack-7.2.7-1/php/php.exe",
+  
+  // Valida ó Señala al ejecutable PHP.
+   "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe",
+  // "php.validate.executablePath": "c:\\xampp1\\php\\php.exe",
+  // "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  // "php.validate.executablePath": "C:\\Bitnami\\wampstack-7.1.20-0\\php\\php.exe",
+  // "php.validate.executablePath": "C:/Bitnami/wappstack-7.2.7-1/php/php.exe",
+  //
+  // Indica si linter se ejecuta al guardar o al escribir.
+  "php.validate.run": "onType",
+  //
+  // PHP Intellisense
+  // The path to a PHP 7+ executable.
+  "php.executablePath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe",
+  // "php.executablePath": "C:\\Bitnami\\wampstack-7.1.20-0\\php\\php.exe",
+  // "php.executablePath": "C:\\xampp1\\php\\php.exe",
+  // "php.executablePath": "C:\\Bitnami\\wampstack-7.1.20-0\\php\\php.exe"
+  ////PHP
+  "window.zoomLevel": -1,
+  "window.openFilesInNewWindow": "off",
+  // "files.autoSave": "afterDelay",
+  //"editor.wrappingColumn": 0,
+  "window.restoreFullscreen": true,
+  "editor.renderIndentGuides": false,
+  "editor.mouseWheelZoom": true,
+  "php.validate.enable": true,
+  "explorer.confirmDelete": false,
+  "github.allowUnsafeSSL": true,
+  "github.customPullRequestDescription": "gitEditor",
+  "github.customPullRequestTitle": true,
+  "gitProjectManager.storeRepositoriesBetweenSessions": true,
+  "gitProjectManager.supportsMercurial": true,
+  "gitProjectManager.supportsSVN": true,
+  "explorer.confirmDragAndDrop": false,
+  "git.autofetch": true,
+  "terminal.integrated.rendererType": "dom",
+
+  /*Ine*/
+  "mssql.connections": [{
+    "server": "192.168.3.200\\\\sqlcluster02,1435,siv",
+    "database": "SIV",
+    "authenticationType": "SqlLogin",
+    "user": "SoporteAplicativo",
+    "password": "",
+    "emptyPasswordInput": false,
+    "savePassword": true,
+    "profileName": "SIV"
+  }],
+  "git.confirmSync": false
+}

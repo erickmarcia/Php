@@ -1,0 +1,121 @@
+{
+    "cSpell.language": "en,es-ES,es",
+    "[html]": {},
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": false,
+    // "workbench.iconTheme": "material-icon-theme",
+    // "team.showWelcomeMessage": false,
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 14,
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "breadcrumbs.enabled": true,
+    "window.openFilesInNewWindow": "off",
+    "editor.mouseWheelZoom": true,
+    "php.validate.enable": true,
+    "explorer.confirmDelete": false,
+    "github.allowUnsafeSSL": true,
+    "github.customPullRequestDescription": "gitEditor",
+    "github.customPullRequestTitle": true,
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+    "gitProjectManager.supportsMercurial": true,
+    "gitProjectManager.supportsSVN": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.autofetch": true,
+    "git.ignoreMissingGitWarning": true,
+    //  "git.confirmSync": false,
+    /*Conexión*/
+    "mssql.maxRecentConnections": 5,
+    // "mssql.connections":[],
+    /*Ine*/
+    "mssql.connections": [{
+        "server": "192.168.3.200\\\\sqlcluster02,1435,siv",
+        "database": "SIV",
+        "authenticationType": "SqlLogin",
+        "user": "SoporteAplicativo",
+        "password": "",
+        "emptyPasswordInput": false,
+        "savePassword": true,
+        "profileName": "SIV"
+    }],
+    "files.associations": {
+        "*.sql": "sql"
+    },
+    "mssql.shortcuts": {
+        "event.toggleResultPane": "ctrl+alt+r",
+        "event.toggleMessagePane": "ctrl+alt+y",
+        "event.prevGrid": "ctrl+up",
+        "event.nextGrid": "ctrl+down",
+        "event.copySelection": "ctrl+c",
+        "event.maximizeGrid": "",
+        "event.selectAll": "",
+        "event.saveAsJSON": "",
+        "event.saveAsCSV": "",
+        "event.saveAsExcel": ""
+    },
+    "workbench.colorTheme": "Visual Studio Dark",
+    "editor.renderIndentGuides": false,
+
+    "mssql.messagesDefaultOpen": true,
+    "mssql.logDebugInfo": false,
+    // "mssql.saveAsCSV.includeHeaders": true,
+    "mssql.intelliSense.enableIntelliSense": true,
+    "mssql.intelliSense.enableErrorChecking": true,
+    "mssql.intelliSense.enableSuggestions": true,
+    "mssql.intelliSense.enableQuickInfo": true,
+    "mssql.intelliSense.lowerCaseSuggestions": false,
+    "mssql.resultsFontFamily": "-apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif",
+    "mssql.resultsFontSize": 13,
+    "mssql.copyIncludeHeaders": false,
+    "mssql.copyRemoveNewLine": true,
+    "mssql.splitPaneSelection": "next",
+    "mssql.format.alignColumnDefinitionsInColumns": false,
+    "mssql.format.datatypeCasing": "none",
+    "mssql.format.keywordCasing": "none",
+    "mssql.format.placeCommasBeforeNextStatement": false,
+    "mssql.format.placeSelectStatementReferencesOnNewLine": false,
+    "mssql.applyLocalization": false,
+    "mssql.query.displayBitAsNumber": true,
+    "mssql.persistQueryResultTabs": false,
+
+    /*php*/
+    // CONFIGURACIÖN PARA PHP
+    "phpserver.relativePath": ".",
+    "phpserver.port": 3000,
+    //"phpserver.phpPath": "C:/laragon/bin/php/php-7.2.11-Win32-VC15-x64/php.exe",
+    "phpserver.phpPath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe",
+    // Valida ó Señala al ejecutable PHP.
+    //"php.validate.executablePath": "C:/laragon/bin/php/php-7.2.11-Win32-VC15-x64/php.exe",
+    "php.validate.executablePath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe.fake",
+    // "php-project.launchOutputTemplate": "PHP server running with {{rootDir}} as root directory. Reach server using http://{{localhost:3000}}/",
+    "php-project.launchOutputTemplate": "PHP server running with ${cwd} as root directory. Reach server using localhost:3000",
+    "php-project.automaticRestart": true,
+    // Indica si linter se ejecuta al guardar o al escribir.
+    "php.validate.run": "onType",
+    //
+    // PHP Intellisense
+    // The path to a PHP 7+ executable.
+    //"php.executablePath": "C:/laragon/bin/php/php-7.2.11-Win32-VC15-x64/php.exe",
+    "php.executablePath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe",
+    "window.zoomLevel": 0,
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.tree.horizontalScrolling": true,
+    "github.remoteName": "erickmarcia",
+    //Php-Project
+    //"php-project.executablePath": "C:/laragon/bin/php/php-7.2.11-Win32-VC15-x64/php.exe",
+    "php-project.executablePath": "C:\\laragon\\bin\\php\\php-7.2.11-Win32-VC15-x64\\php.exe",
+    // [
+    //   "-S",
+    //   "localhost:3000",
+    //   "${cwd}/${fileBasename}",
+    //   "C:\\dir1\\dir2\\../currentlyOpenFileInEditor.txt",
+    //   "${fileBasename}",
+    //   "C:\\dir1\\currentlyOpenFileInEditor.txt"
+    // ]
+    ////PHP
+
+    "workbench.view.alwaysShowHeaderActions": true,
+    "zenMode.restore": true,
+    "window.closeWhenEmpty": true,
+}
