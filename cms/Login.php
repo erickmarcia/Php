@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Login</title>
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-    <link rel="stylesheet" href="../assets/css/style.css"/>
-    <script src="main.js"></script>
 </head>
 <body>
-    
-    <div class="container-fluid register-login">
+   <div class="container-fluid register-login">
         <div class="row wrapper">
             <div class="col-lg padding-none bg-image-container">
                 <div class="container__image">
@@ -25,6 +22,7 @@
                     <!-- Action la página a la cuál irá la información del formulario -->
                     <!-- Method indica cómo enviaremos la información por el método HTTP -->
                     <!-- enctype multipart/form-data permite agregar archivos -->
+                    <!-- Inicia Formulario -->
                     <form action="login.php" method="POST" name="loginForm" id="loginForm">
                         <div class="form-group">
                             <input type="text" id="apodo" name="apodo" class="form-control" required>
@@ -46,11 +44,13 @@
                             <button type="submit" class="btn btn-login align-self-center" name="acceso" id="acceso">Entrar</button>
                         </div>
                     </form>
+                    <!-- Fin Formulario -->
                 </div>
             </div>
 
         </div>
     </div>
+    
 
 
 </body>
