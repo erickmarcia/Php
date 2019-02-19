@@ -1,0 +1,40 @@
+Para hacer un registro de usuario debemos hablar de un tema de gran importancia como son las sesiones.
+
+Sirven para persistir la información mientras que nuestros usuarios están navegando. 
+
+Debemos estar seguros que mientras navega nuestro usuario la sesión permanece sin cambios hasta que el usuario cierre sesión o cierre su navegador.
+
+Las sesiones son una forma sencilla de almacenar datos para usuarios de manera individual usando un ID de sesión único
+
+Iniciar sesion -> session_start();
+$dato = '123456';
+
+Variable de sesion -> $_SESSION['dato'] = $dato;
+
+Cerrar session -> session_destroy();
+
+
+HABLAR EN OTRA CLASE DE COOKIES
+Cookie: Es un archivo que se guarda en la computadora del usuario que visita nuestro sitio con la finalidad de recordar datos.
+
+Crear -> setcookie('nombre', 'valor, solo texto', caducidad);
+setcookie('galleta', 'mi galleta');
+
+
+
+
+hosting 
+cont603385.earth.orderbox-dns.com
+cont603385.mars.orderbox-dns.com
+cont603385.mercury.orderbox-dns.com
+cont603385.venus.orderbox-dns.com
+
+ Opción 1: Configurar el Nombre de Dominio para usar nuestros servidores de nombres (Recomendado)
+cont603385.mars.orderbox-dns.com
+cont603385.earth.orderbox-dns.com
+cont603385.venus.orderbox-dns.com
+cont603385.mercury.orderbox-dns.com
+ Opción 2: Agregue los siguientes registros a sus nombres de dominio de sus existentes Servidores DNS
+softwaresoluciones.tech IN A 207.174.213.34
+www.softwaresoluciones.tech IN A 207.174.213.34
+*.softwaresoluciones.tech IN A 207.174.213.34

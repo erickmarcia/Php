@@ -17,20 +17,20 @@
             "cwd": "${fileDirname}",
             "port": 9000
         },
-        {
-            "label": "Abrir en localhost (Firefox)",
-            "command": "explorer",
-            "windows": {
-                "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-            },
-            "args": [
-                "localhost/${workspaceFolderBasename}/${relativeFile}"
-            ],
-            "presentation": {
-                "reveal": "never"
-            },
-            "problemMatcher": []
-        },
+        // {
+        //     "label": "Abrir en localhost (Firefox)",
+        //     "command": "explorer",
+        //     "windows": {
+        //         "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+        //     },
+        //     "args": [
+        //         "localhost/${workspaceFolderBasename}/${relativeFile}"
+        //     ],
+        //     "presentation": {
+        //         "reveal": "never"
+        //     },
+        //     "problemMatcher": []
+        // },
         {
             "type": "chrome",
             "request": "launch",
@@ -38,19 +38,19 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         },
-        {
-            "label": "Abrir en localhost (Chrome)",
-            "command": "explorer",
-            "windows": {
-                "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-            },
-            "args": [
-                "localhost:3000/${workspaceFolderBasename}/${relativeFile}"
-            ],
-            "presentation": {
-                "reveal": "never"
-            },
-            "problemMatcher": []
-        }
+        // {
+        //     "label": "Abrir en localhost (Chrome)",
+        //     "command": "explorer",
+        //     "windows": {
+        //         "command": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+        //     },
+        //     "args": [
+        //         "localhost:3000/${workspaceFolderBasename}/${relativeFile}"
+        //     ],
+        //     "presentation": {
+        //         "reveal": "never"
+        //     },
+        //     "problemMatcher": []
+        // }
     ]
 }

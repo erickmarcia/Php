@@ -1,14 +1,14 @@
 <?php
     require_once 'controllers/UserController.php';
-    $usuario = new UserController();
-    $usuario->login();
+    $user = new UserController();
+    $user->login();
 
     if (isset($_POST['acceso'])) {
-        $datos = array(
+        $data = array(
             'username'    => $_POST['username'],
             'password' => md5($_POST['password'])
         );
-        $usuario->accessUsers($datos);
+        $respuesta = $user->accessUsers($data);
     }
 ?>
     <div class="container-fluid register-login">
@@ -25,7 +25,7 @@
                     <!-- Action la página a la cuál irá la información del formulario -->
                     <!-- Method indica cómo enviaremos la información por el método HTTP -->
                     <!-- enctype multipart/form-data permite agregar archivos -->
-                    <form action="login.php" method="POST" name="loginForm" id="loginForm">
+                    <form action="index.php?page=login" method="POST" name="loginForm" id="loginForm">
                         <div class="form-group">
                             <input type="text" id="username" name="username" class="form-control" required>
                             <label for="username" class="form-label">Usuario</label>
@@ -40,7 +40,7 @@
                                 <label class="form-check-label order-2" for="remember">Recuérdame</label>
                                 <label class="label--ckecked order-1" for="remember"></label>
                             </div>
-                            <a href="#" class="forgot__password--link">¿Olvidó su contraseña?</a>
+                            <!--<a href="#" class="forgot__password--link">¿Olvidó su contraseña?</a>-->
                         </div>
                         <div class="d-flex justify-content-lg-between">
                             <button type="submit" class="btn btn-login align-self-center" name="acceso" id="acceso">Entrar</button>
