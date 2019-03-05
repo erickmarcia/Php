@@ -1,0 +1,11 @@
+{
+  "name": "webpack-starter-kit",
+  "version": "1.0.0",
+  "description": "Kit de Inicio para trabajar Webpack con Php, Python, ASP.NET y Vanilla JS, Vue.js, React, TypeScript, Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erick Marcia <mar_cia14@hotmail.com>",
+  "license": "MIT"
+}
